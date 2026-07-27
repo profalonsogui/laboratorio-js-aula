@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laboratório de JavaScript — PW I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Karla:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<header class="topo">
+  <p class="etiqueta">PW I · Programação Web I · Desenvolvimento de Sistemas</p>
+  <h1>Laboratório de JavaScript</h1>
+  <p class="lead">Nada aqui é só leitura. <strong>Todo bloco de código é editável:</strong> mude o que quiser, clique em Rodar e veja o resultado na hora. Se o código quebrar, o erro aparece — e erro é informação, não fracasso.</p>
+
+  <div class="repl">
+    <div class="repl-cab">comece por aqui</div>
+    <div style="padding:.9rem 1rem 1.1rem">
+      <div class="editor">
+        <div class="editor-cab"><span>seu código</span><span class="dica-teclado">Ctrl + Enter roda</span></div>
+        <textarea class="codigo" rows="3" data-licao="00" spellcheck="false">console.log('Bom dia, turma!');
+console.log(2 + 3 * 4);</textarea>
+      </div>
+      <div class="acoes">
+        <button class="btn js-rodar" type="button">Rodar</button>
+      </div>
+      <div class="saida" aria-live="polite"><span class="vazio">A saída aparece aqui.</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="grade">
+  <nav class="indice" aria-label="Lições">
+    <h2>Lições</h2>
+    <ol id="indice-lista"></ol>
+  </nav>
+  <main id="licoes"></main>
+</div>
+
+<footer class="rodape">
+  Página feita para as aulas de Programação Web I. Funciona offline (exceto fontes e jQuery, que vêm de CDN).
+</footer>
+
+<section class="registro" id="registro" aria-label="Registro da aula">
+  <div class="registro-cab">
+    <button class="titulo" type="button" id="alternar-registro" aria-expanded="true">Registro da aula</button>
+    <span class="contador" id="registro-contador">0</span>
+    <span class="espaco"></span>
+    <button class="btn-registro" type="button" id="limpar-registro">Limpar</button>
+  </div>
+  <div class="registro-corpo" id="registro-corpo">
+    <p class="nada">Tudo o que você rodar nesta página fica registrado aqui, em ordem.</p>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
